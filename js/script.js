@@ -63,11 +63,13 @@ monogatari.assets ('videos', {
 
 // Define the images used in the game.
 monogatari.assets ('images', {
-    'spaghetti' : 'Spaghet.jpg'
+    'spaghetti' : 'Spaghet.jpg',
+    'clock': 'RhinoClock.jpg'
 });
 
 // Define the backgrounds for each scene.
 monogatari.assets ('scenes', {
+    'field': 'BandField.jpg',
 });
 
 // Define the Characters
@@ -86,6 +88,7 @@ monogatari.characters ({
         directory: 'butts',
         sprites: {
             feet: 'feet.png',
+            normal: 'normal.png'
         }
     },
     'rex' : {
@@ -112,7 +115,11 @@ monogatari.characters ({
     'duke' : {
         name: 'Haduken',
         color: '##fc0303',
-        directory: 'duke'
+        directory: 'duke',
+        sprites: {
+            death: 'pgDeath.png',
+            normal: 'normal.png'
+        }
     },
     'kys' : {
         name: 'Kysclade',
@@ -137,7 +144,7 @@ monogatari.script ({
                     'Do': 'jump 000_scream'
                 },
                 'Lick': {
-                    'Text': 'Lick the floor',
+                    'Text': 'Lick the couch',
                     'Do': 'jump 000_lick'
                 },
                 'Open': {
@@ -349,7 +356,7 @@ monogatari.script ({
                     'Do': 'jump 004_eat'
                 },
                 'Face': {
-                    'Text': 'Faceplant directly into the bowl',
+                    'Text': 'Eat like caveman',
                     'Do': 'jump 004_face'
                 }
             }
@@ -372,6 +379,7 @@ monogatari.script ({
         'It crumbles and turns into dust',
         'You scoop up the dust and put it into your mouth.',
         'narrator The dark 🖤 charred edges of the rigatoni 🥖 shatter 💥 instantly between your teeth 🦷, fracturing into a brittle, smoky 💨 brittle dust 🌫️ that yields to an intensely savory, deeply caramelized core 🤤. It isnt just burnt 🔥; its transformed ✨. That blistered, blackened crust 🌑 carries the deep, roasted bitterness of toasted wheat 🌾, bitter cocoa 🍫, and campfire char 🪵, instantly balanced by the slick, velvety richness of reduced tomato gravy 🍅. The sauce has cooked down into an almost jammy paste 🍯, sticky and concentrated 🍷, hitting your tongue 👅 with an electric surge ⚡ of bright acidity 🍋, mellow garlic sweetness 🧄, and fragrant, sun-dried basil 🌿. As the brittle crumbles give way 🔨, they soak up the warm pools of molten, peppery olive oil 🫒 and gooey, browned parmesan crisps 🧀 that cling like golden lace 🏅 to the ridges. Every bite 👄 is a violent, glorious contrast 🎭: the jagged, crackling snap ⚡ of carbonized shell giving way to a dense, chewy starch center 🍝, all drowned in that intoxicatingly sweet, tangy marinara 🥫. The umami 🍄 blooms across your palate 🌈, surging with the caramelized sugars of slow-roasted San Marzanos 🍅 and flaky sea salt 🧂. It finishes with a linger of smoky woodsmoke 💨, fiery red pepper flakes 🌶️, and rich, roasted garlic butter 🧈, leaving behind a decadent, savory warmth ❤️ that makes you immediately scrape the bottom of the iron skillet 🍳 for the very last charred, delicious crumb 🤤🍴.',
+        'hide image spaghetti',
         'You look up at krug.',
         'show character krug close',
         'He is like a nurturing mother.  You feel full and whole, like you are safe and welcome in this haus.',
@@ -380,7 +388,108 @@ monogatari.script ({
 		'You hear a loud yell from the bathroom',
         'kys Yo were out of toilet paper again',
         'krug Just use the cat hes over ther somewhere',
-        'A single tear rolls down your cheek as you chew on pure carbon.',
+        'A single tear rolls down your cheek as you chew on delicious pasta.',
+        'You continue to devour the plate until its been fully licked clean',
+        'krug Im glad you liked it sweetie',
+        'He blushes and swiftly walks away to the kitchen',
+        'hide character krug',
+        'Oh would you look at the time!',
+        'show image clock',
+        'You look at the beutiful clock sitting on the dresser and realize its almost time for rehersal!',
+        'Oh no!  Its friday and you dont know if your ready for the show this weekend.',
+        'hide image clock',
+        'You get up to find your bag sitting right next to you',
+        'show character butts normal',
+        'butts I got this for you, sugar.',
+        {
+            'Choice': {
+                'Dialog': 'butts Are you ready to go to rehersal?',
+                'yes': {
+                    'Text': 'Yes',
+                    'Do': 'jump 005_yes'
+                },
+                'no': {
+                    'Text': 'No',
+                    'Do': 'jump 005_no'
+                }
+            }
+        },
+    ],
+
+    "005_yes" : [
+        'butts Great, lets go then!',
+        'hide character butts',
+        'The two of you begin to walk out of Tuba Haus',
+        'show character duke normal',
+        'BAM!',
+        'You run into duke while walking out the door.  His flip folder and music flies everywhere.',
+        'duke OMG im so sorry',
+        {
+            'Choice': {
+                'Dialog': 'Duke gets on his knees and begins to pick up his music',
+                'help': {
+                    'Text': 'Help',
+                    'Do': 'jump 006_help'
+                },
+                'no_help': {
+                    'Text': 'Dont Help',
+                    'Do': 'jump 006_dont_help'
+                }
+            }
+        },
+    ],
+
+    "006_help" : [
+        'You get on your knees as well and begin to help pick up',
+        // 'show character duke close',
+        'You grab his show music when you suddenly lock eyes',
+        'Your noses are less than a centimeter away from eachother, and you can feel eachothers breath.',
+        'duke Thhh...Thhan...Thank You!',
+        'Duke blushes heavily',
+        'show character duke normal',
+        'Duke stands up straight',
+        'I will see you at rehersal!',
+        'He runs away.',
+        'hide character duke',
+        'show character butts normal',
+        'butts Huh, odd.  Ive never seen him so flustered.  Must be your cute face.',
+        'You blush from being teased.',
+        'butts Come on, lets get to rehersal.',
+        'The two of you leave haus and go to rehersal',
+        'jump 007'
+    ],
+
+    "006_dont_help" : [
+        'Being the evil, heartless, demon that you are, you dont help duke.',
+        'In fact, since you are such a terrible person, you kick him while he is grabbing his stuff.',
+        'show character duke death',
+        'I hope you feel good about yourself.  Actually, I hope you never play a game like this again',
+        'Who in their right mind would not help him pick up his stuff',
+        'do better',
+        'please dont play my game again',
+        'your a disgrace to the band and whatever section you are in',
+        'dont come back',
         'end'
+    ],
+
+    "005_no" : [
+        'butts Oh, i guess you can go with krug.  Dont be late.',
+        'hide character butts',
+        'You hear krug shuffling around in the kitchen.',
+        'You wait.',
+        'show character krug close',
+        'After 30 minutes, krug finaly comes out into the living room',
+        'krug Oh wait are you ready to go?',
+        'hide character krug',
+        'Krug leaves again',
+        'you wait another 30 minutes.  Practice started 25 minutes ago.',
+        'show character krug close',
+        'krug Alright im ready now lets go!',
+        'The two of you make your way out of the door and head to the band field.',
+        'jump 007'
+    ],
+
+    "007" : [
+        'show scene field with fadeIn',
     ]
 });
