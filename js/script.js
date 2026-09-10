@@ -70,6 +70,8 @@ monogatari.assets ('images', {
 // Define the backgrounds for each scene.
 monogatari.assets ('scenes', {
     'field': 'BandField.jpg',
+    'kitchen': 'Kitchen.jpg',
+    'living': 'LivingRoom.jpg'
 });
 
 // Define the Characters
@@ -171,7 +173,7 @@ monogatari.script ({
     ],
 
     '000_open': [
-        'show scene #cfcfcf with fadeIn',
+        'show scene living with fadeIn',
         'show character dewalt normal',
         'A handsome man is leaning over you, smiling cutely',
         'Your headache immediately clears and your able to fully grasp the man standing over you',
@@ -230,7 +232,7 @@ monogatari.script ({
         'dewalt Anyways, i heard krug was making breakfast.',
         'Your nostril fills with the scent of burnt spaghetti and moldy alfredo sauce',
         'dewalt Come on, lets get you up.',
-        'show scene #f7f6f6 with fadeIn',
+        'show scene kitchen with fadeIn',
         'show character krug close',
         'krug Hey sweetie, hope you slept well!',
         'Cowboy Krug is standing over a skillet wearing an apron that just says CHEF SLUT on it',
@@ -272,7 +274,7 @@ monogatari.script ({
 
     '002_cont' : [
         'You walk back over to the couch and take a seat',
-        'show scene #cfcfcf with fadeIn',
+        'show scene living with fadeIn',
         'show character rex fent',
         'Next to you is a cute looking man seemingly folded over himself on the couch',
         'He is folded like a tweaker on a tuesday afternoon',
