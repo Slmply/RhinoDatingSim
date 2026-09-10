@@ -9,7 +9,21 @@ monogatari.action ('message').messages ({
             <p><a href='https://developers.monogatari.io/documentation/'>Documentation</a> - Everything you need to know.</p>
             <p><a href='https://monogatari.io/demo/'>Demo</a> - A simple Demo.</p>
         `
-    }
+    },
+    'DeathEnding': {
+        title: 'Death',
+        subtitle: 'You got the death ending.',
+        body: `
+            <p>Congratulations, you somehow died.  Baka.</p>
+        `
+    },
+    'BadPersonEnding': {
+        title: 'You Are A Bad Person',
+        subtitle: 'You got the Bad Person ending.',
+        body: `
+            <p>Congratulations, you are a bad person.  Day ToDay.</p>
+        `
+    },
 });
 
 // Define the notifications used in the game
@@ -169,6 +183,7 @@ monogatari.script ({
         'Mmm... tastes like sweat and beer',
         'You gain like -20 HP and lowherbenuinely die',
 		'The End',
+        'show message DeathEnding',
         'end'
     ],
 
@@ -471,6 +486,7 @@ monogatari.script ({
         'please dont play my game again',
         'your a disgrace to the band and whatever section you are in',
         'dont come back',
+        'show message BadPersonEnding',
         'end'
     ],
 
