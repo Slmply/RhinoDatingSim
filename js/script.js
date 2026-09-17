@@ -78,7 +78,9 @@ monogatari.assets ('videos', {
 // Define the images used in the game.
 monogatari.assets ('images', {
     'spaghetti' : 'Spaghet.jpg',
-    'clock': 'RhinoClock.jpg'
+    'clock': 'RhinoClock.jpg',
+    'tubas': 'TubaSection.png',
+    'football': 'Football.webp'
 });
 
 // Define the backgrounds for each scene.
@@ -141,6 +143,43 @@ monogatari.characters ({
         name: 'Kysclade',
         color: '#1703fc',
         directory: 'kys'
+    },
+    'papa' : {
+        name: "Papa",
+        color: '#4934eb',
+        directory: 'papa'
+    },
+    'izz' : {
+        name: "Izz",
+        color: '#ebe834',
+        directory: 'izz',
+        sprites: {
+            feet: 'IzzFeet.png'
+        }
+    },
+    'bc' : {
+        name: "BaChuzz",
+        color: '#eb6b34',
+        directory: 'bc',
+        sprites: {
+            point: 'BCPoint.png'
+        }
+    },
+    'td' : {
+        name: "TailsDerp",
+        color: '#34d8eb',
+        directory: 'td',
+        sprites: {
+            pose: 'Riley.png'
+        }
+    },
+    'nick' : {
+        name: "Leonardo DerpCaprio",
+        color: '#34eb58',
+        directory: 'nick',
+        sprites: {
+            salute: 'doitfornick.jpg'
+        }
     }
 });
 
@@ -509,5 +548,229 @@ monogatari.script ({
 
     "007" : [
         'show scene field with fadeIn',
+        'The practice field is bright, and the sun shines down casting a shadow of the tower onto the sidelines.',
+        'People begin to shuffle in through the gates and into the field.',
+        'butts Over Here!',
+        'show image tubas',
+        'There they are.  The Wisconsin Tubas.',
+        'Widely regarded as the best tuba players in the Americas, and the sexiest college students in the big 10.',
+        'Look at them. Just bask in the sheer, unbridled, god-tier aura radiating off every single bell.',
+        'They do not simply march on the turf; the earth willingly flattens itself in humble reverence beneath their thunderous footfalls.',
+        'Each member looks like they were hand-chiseled out of solid Greek marble by Michelangelo himself after he took a masterclass in peak physical perfection.',
+        'Their lungs possess the catastrophic air capacity of a jet turbine, exhaling pure, concentrated raw sex appeal directly through twenty pounds of polished brass.',
+        'Not a single drop of sweat dare ruin their pristine foreheads—only a celestial dew of raw athletic supremacy.',
+        'Scientists at MIT have tried for decades to quantify their jawlines, but modern supercomputers literally overheat trying to process such lethal symmetry.',
+        'Their pedal tones are so profound, so earth-shattering, that they could effortlessly alter the tectonic plates of North America and cure every known disease in a single measure.',
+        'Legends say that when the Wisconsin Tubas breathe in unison, the wind patterns of the Northern Hemisphere shift just to catch a whiff of their immaculate greatness.',
+        'Kings bow. Greek deities weep bitter tears of inadequacy. Camp Randall only exists as a crude sacrificial altar for their bass lines.',
+        'They are not mere brass players; they are golden stallions, angelic paragons of virtue, and the undisputed apex predators of the Western Hemisphere.',
+        'To merely stand within breathing distance of their majestic horn carriages is an honor you will spend the rest of your mortal life failing to deserve.',
+        'I am so glad to be a guest tuba for this upcoming show',
+        'butts Get over here, its time for rhinoball!',
+        'hide image tubas',
+        'You run to the 1 and get into position.',
+        'show character izz feet',
+        'izz Are you ready to go, big dawg?',
+        'I want you to run the best route of your life.  Ill be looking for you out on the field.',
+        'izz Seettttt, seeet, HIKE!',
+        'You begin to run.',
+        'hide character izz',
+        'jump 008_dodge1'
+    ],
+
+    '008_dodge1': [
+        'You sprint forward with the speed of a startled raccoon on slippery kitchen tile.',
+        'show character bc point',
+        'Suddenly, BaChuzz materializes right in your path, arms out wide like a rabid windmill!',
+        {
+            'Choice': {
+                'Dialog': 'BaChuzz approaches at terminal velocity! What evasive maneuver do u pull?!',
+                'Cartwheel': {
+                    'Text': 'Nakedly aggressive tactical cartwheel',
+                    'Do': 'jump 008_d1_cartwheel'
+                },
+                'Slide': {
+                    'Text': 'Aggressive crotch slide between their legs',
+                    'Do': 'jump 008_d1_slide'
+                },
+                'Worm': {
+                    'Text': 'Drop and perform the aggressive inchworm',
+                    'Do': 'jump 008_d1_worm'
+                }
+            }
+        }
+    ],
+
+    '008_d1_cartwheel': [
+        'You hurl your body sideways into a violently off-tempo gymnastics cartwheel.',
+        'Your left shoe grazes BaChuzz directly in the collarbone as you twirl with unholy momentum.',
+        'BaChuzz is so utterly stunned by your raw gymnastic dominance that they trip over their own laces and hit the rubber turf like a sack of damp laundry.',
+        'jump 008_dodge2'
+    ],
+
+    '008_d1_slide': [
+        'You drop flat to your knees and slide directly between BaChuzz legs like a human bowling ball at 35 miles per hour.',
+        'The sheer frictional heat from the turf creates a tiny puff of synthetic grass smoke.',
+        'You pop back up to your feet behind them like a greasy meerkat, leaving them clutching empty air.',
+        'jump 008_dodge2'
+    ],
+
+    '008_d1_worm': [
+        'You literally belly-flop onto the turf and ripple across the ground like a terrified earthworm.',
+        'BaChuzz stares down at you in horrified confusion for three entire Mississippi seconds.',
+        'Before they can comprehend your benthic majesty, you spring upright and keep hauling ass.',
+        'jump 008_dodge2'
+    ],
+
+    '008_dodge2': [
+        'hide character bc',
+        'You hit the 30-yard line at full throttle, lungs bellowing like a clogged diesel engine.',
+        'show character td pose',
+        'Out of nowhere, TailsDerp lunges toward you, eyes locked onto your hip flags with predatory hunger!',
+        {
+            'Choice': {
+                'Dialog': 'TailsDerp is about to snatch your flags! React now!',
+                'Spin': {
+                    'Text': 'Beyblade spin until dizzy',
+                    'Do': 'jump 008_d2_spin'
+                },
+                'Meow': {
+                    'Text': 'Hiss violently and skitter sideways',
+                    'Do': 'jump 008_d2_meow'
+                },
+                'FakeHeart': {
+                    'Text': 'Fake a spontaneous heart palpitation',
+                    'Do': 'jump 008_d2_fake'
+                }
+            }
+        }
+    ],
+
+    '008_d2_spin': [
+        'You tuck your arms in and unleash a hyper-sonic 720-degree Beyblade spin.',
+        'The centrifugal force whips your jerseys fringes into TailsDerp face with devastating whipping action.',
+        'They stagger backward, legally blinded by sheer centrifugal aura, while you stumble forward completely cross-eyed.',
+        'jump 008_dodge3'
+    ],
+
+    '008_d2_meow': [
+        'You arch your back, hiss like an angry alley cat, and crab-scuttle laterally at a terrifying 45-degree angle.',
+        'TailsDerp freezes, instantly questioning every life choice that brought them to this football field today.',
+        'You slip right past their personal space bubble while making continuous spitting sounds.',
+        'jump 008_dodge3'
+    ],
+
+    '008_d2_fake': [
+        'You clutch your chest, gasp "OH LORD SHE COMMIN FOR ME", and dramatically faint into a tactical limp noodle.',
+        'TailsDerp instinctively halts to perform emergency triage and look for an athletic trainer.',
+        'The moment their hands drop, you spring back to life like a spring-loaded jack-in-the-box and blast past them.',
+        'jump 008_dodge3'
+    ],
+
+    '008_dodge3': [
+        'hide character td',
+        'The end zone is in sight! The scent of glory and stale beer fills the autumn wind!',
+        'show character nick salute',
+        'Standing directly between you and destiny is the final guardian: Leonardo DerpCaprio, massive and unyielding.',
+        {
+            'Choice': {
+                'Dialog': 'The final boss Leonardo DerpCaprio blocks the end zone! Choose your finishing maneuver!',
+                'Hurdle': {
+                    'Text': 'Leap directly over their head',
+                    'Do': 'jump 008_d3_leap'
+                },
+                'Moonwalk': {
+                    'Text': 'Backpedal moonwalk with aggressive eye contact',
+                    'Do': 'jump 008_d3_moon'
+                },
+                'Flirt': {
+                    'Text': 'Blow an aggressive air kiss at them',
+                    'Do': 'jump 008_d3_kiss'
+                }
+            }
+        }
+    ],
+
+    '008_d3_leap': [
+        'You stomp down on the turf and launch your entire mass into the upper stratosphere.',
+        'You sail over Leonardo DerpCaprios head like an airborne bowling ball with zero regard for earthly gravity.',
+        'You graze their scalp with your sock before sticking a wobbly, three-point superhero landing behind them.',
+        'jump 008_catch'
+    ],
+
+    '008_d3_moon': [
+        'You slam on the brakes, spin around 180 degrees, and begin furiously moonwalking directly into their face.',
+        'The psychic damage from this display completely short-circuits Leonardo DerpCaprios central nervous system.',
+        'They swipe at your waist and end up grabbing only the gust of air left in your funky smooth wake.',
+        'jump 008_catch'
+    ],
+
+    '008_d3_kiss': [
+        'You point both finger guns at Leonardo DerpCaprio, deliver a loud dramatic mwah kiss, and flash a wink.',
+        'Their brain hits an unrecoverable 404 error and their legs turn entirely to lukewarm cottage cheese.',
+        'They topple sideways into the sideline cones like an abandoned folding lawn chair.',
+        'jump 008_catch'
+    ],
+
+    '008_catch': [
+        'hide character nick',
+        'You break wide open into the end zone, panting like an exhausted golden retriever.',
+        'show character izz feet',
+        'izz LOOK ALIVE BIG DAWG!!',
+        'hide character izz',
+        'show image football',
+        'The rhinoball arcs through the azure sky, spinning with the majestic trajectory of a dying duck.',
+        'Time slows down to an absolute crawl.',
+        'Every single member of the Wisconsin Tuba section stops breathing. The universe holds its breath.',
+        {
+            'Choice': {
+                'Dialog': 'The ball is descending from the heavens! How do you snag it?!',
+                'Teeth': {
+                    'Text': 'Catch it with your bare teeth',
+                    'Do': 'jump 009_teeth'
+                },
+                'Backflip': {
+                    'Text': 'Blind backwards scorpion kick catch',
+                    'Do': 'jump 009_flip'
+                },
+                'Chest': {
+                    'Text': 'Trap it like a soccer ball with your sternum',
+                    'Do': 'jump 009_chest'
+                }
+            }
+        }
+    ],
+
+    '009_teeth': [
+        'You open your jaw as wide as a Burmese python and clamp down on the leather laces with raw unhinged fury.',
+        'The force nearly rattles your fillings loose, but you lock your jaw tight like a snapping turtle on a mission.',
+        'TOUCHDOWN!!',
+        'jump 009_celebrate'
+    ],
+
+    '009_flip': [
+        'You fling your head backward, blindly throwing your heels into the air like a circus contortionist on energy drinks.',
+        'The ball somehow pinches perfectly between the soles of your shoes upside down in midair.',
+        'You crash flat onto your shoulder blades, still clasping the pigskin aloft like an Olympic trophy.',
+        'TOUCHDOWN!!',
+        'jump 009_celebrate'
+    ],
+
+    '009_chest': [
+        'You puff your chest out like a proud silverback gorilla welcoming the divine projectile.',
+        'THWACK! The ball hits your sternum with the sound of a wet pool noodle slapped against drywall.',
+        'The breath is fully evacuated from your lungs, but your arms snap closed around it like an iron bear trap.',
+        'TOUCHDOWN!!',
+        'jump 009_celebrate'
+    ],
+
+    '009_celebrate': [
+        'hide image football',
+        'The entire band field erupts into deafening cheers of raw, primal testosterone.',
+        'show character izz feet',
+        'izz YOOOOOOOOOOOO THAT WAS THE MOST DIABOLICAL ROUTE IVE EVER SEEN IN MY LIFE!!',
+        'izz You really are that dog, sugar!',
+        'You lie on the rubber turf, tasting little specks of synthetic turf pellets and pure glory.'
     ]
+
 });
