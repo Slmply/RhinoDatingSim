@@ -180,6 +180,14 @@ monogatari.characters ({
         sprites: {
             salute: 'doitfornick.jpg'
         }
+    },
+    'bp' : {
+        name: "Big Perkins",
+        color: '#a89732',
+        directory: 'bp',
+        sprites: {
+            stretch: 'Stretch.jpg'
+        }
     }
 });
 
@@ -770,7 +778,27 @@ monogatari.script ({
         'show character izz feet',
         'izz YOOOOOOOOOOOO THAT WAS THE MOST DIABOLICAL ROUTE IVE EVER SEEN IN MY LIFE!!',
         'izz You really are that dog, sugar!',
-        'You lie on the rubber turf, tasting little specks of synthetic turf pellets and pure glory.'
+        'You lie on the rubber turf, tasting little specks of synthetic turf pellets and pure glory.',
+        'hide character izz',
+        'papa Alright everybody, lets go!',
+        'butts Looks like its time to block up!',
+        'You walk over to the sidelines and grab your horn, then run to your spot in the block.',
+        'You start with jumping jacks, then begin to stretch.',
+        'show character bp stretch',
+        'You spot big perkins on the ground stretching.  Its curious how he got so big.',
+        'Maybe if this guy laid off on the food or ice cream (yes, the ice cream) he wouldnt be so big.',
+        'Did you know that Big Perkins can consistently eat half a gallon of ice cream per week?',
+        'Seems crazy, but its true',
+        'This big back will make the mecca to Memorial Union and terrorize the employees by ordering a half gallon of mocha macchiato.',
+        'Genuinely (genuinely btw (short for btw btw (short for btw))) like once a week',
+        'Everyone make sure to tell him to stop being such a biggie and save some yummy ice cream for the rest of us.',
+        'Anyways....',
+        'Big perkins stretch dat ass toward you.  Your not used to such forward motions from people.',
+        'bp OOHhhh thats the spot',
+        'He seems to be really enjoying his stretch',
+        'Before you can do anything, Ponty whistles and its time to get back into block.',
+        'hide character bp',
+        ''
     ]
 
 });
