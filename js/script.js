@@ -186,7 +186,23 @@ monogatari.characters ({
         color: '#a89732',
         directory: 'bp',
         sprites: {
-            stretch: 'Stretch.jpg'
+            stretch: 'Stretch.png'
+        }
+    },
+    'brewski' : {
+        name: "Derpleganger",
+        color: '#32a852',
+        directory: 'brewski',
+        sprites: {
+            cut: 'PreCut.png',
+        }
+    },
+    'herb' : {
+        name: "Dr. Herb Payung",
+        color: '#ebb734',
+        directory: 'herb',
+        sprites: {
+            smile: 'herb.png',
         }
     }
 });
@@ -783,7 +799,58 @@ monogatari.script ({
         'papa Alright everybody, lets go!',
         'butts Looks like its time to block up!',
         'You walk over to the sidelines and grab your horn, then run to your spot in the block.',
-        'You start with jumping jacks, then begin to stretch.',
+        'You start with jumping jacks, 70 to be exact.',
+        'You do your best to keep count and prepare to stop...',
+        'As you hit the 70th jack, a cute man walks infront of you and locks with your eyes.',
+        'show character brewski cut',
+        'brewski HHHHUUUUGGHGHGHUUHHHHH',
+        'He yells loudly and continues to do jumping jacks in your face',
+        'brewski HEEUUUHGHGHHGH',
+        'His eyes dig into your body and you feel a rush of adrenaline pushing you to keep jumping',
+        'brewski HUUUGUGHGHHGHGUGHGUGHGUGHGHHHHHUGUUGUGUGHHHHHGUGUGUH',
+        'You continue to stare into his eyes and begin to lose count of how many youve done.',
+        'brewski HOUFUUGHHGHGUGUUUUGIOGUGUGHHGHGHGUGOUGUGUOGUOGUGHGHGHGHHGHGUOUGOUUUUHGOUUGHGUGUGHGOUGUGGUHGHGHGHGHGH',
+        'Suddenly he stops.',
+        'You two stare at eachother, breathing heavily.  He seems to be getting ready to yell.',
+        'brewski SSIIIIIIIIXXXTYYY NINNNNEEEEEEEEE!!!!!!!!',
+        'He bends backwards as he screams, and the gutteral length of the yell shakes the turf which you are standing on.',
+        'He pauses and stares at you, then winks.',
+        {
+            'Choice': {
+                // 'Dialog': 'The ball is descending from the heavens! How do you snag it?!',
+                'Wink': {
+                    'Text': 'Wink back',
+                    'Do': 'jump 010_wink'
+                },
+                'NoWink': {
+                    'Text': 'Dont wink',
+                    'Do': 'jump 010_no_wink'
+                },
+            }
+        },
+    ],
+
+    "010_wink" : [
+        'You wink back to Derpelganger.',
+        'He begins to smirk and his cheeks turn slightly red.',
+        'You both stop and breathe slowly, looking at eachother.',
+        'His breath reaches your chest and you get a tingling feeling across it.',
+        'I cant come up with any more weird descriptions so just imagine liek a super intimate moment with this person and thats what happens.  Thx, the creator.',
+        'Also despite all the chemistry between you two we gotta move to the next cameo, so Derpelganger will just walk away lol.',
+        'Derpelganger walks away',
+        'hide character brewski',
+        'jump 010_cont'
+    ],
+
+    "010_no_wink" : [
+        'You dont wink back because you dont like fun and clearly have bad taste in your partners.',
+        'Like just sleep away the bus ride if your going to be doing this in my game.',
+        'Derpelganger walks away',
+        'hide character brewski',
+        'jump 010_cont',
+    ],
+
+    "010_cont" : [
         'show character bp stretch',
         'You spot big perkins on the ground stretching.  Its curious how he got so big.',
         'Maybe if this guy laid off on the food or ice cream (yes, the ice cream) he wouldnt be so big.',
@@ -798,6 +865,20 @@ monogatari.script ({
         'He seems to be really enjoying his stretch',
         'Before you can do anything, Ponty whistles and its time to get back into block.',
         'hide character bp',
+        'You walk back to your position in block.',
+        'show character herb smile',
+        'herb Alright everyone get ready',
+        'herb When I was walking around yesterday I found a quarter on the ground.',
+        'herb ...',
+        'herb Anyways, Lets get to it.',
+        'herb lets start with a forward march eight, left turn, forward march 8, forward march eight, left turn, forward march 8, forward march eight, left turn, forward march 8, right turn, forward march 8, right turn, forward march 8, right turn, forward march 8, right turn.',
+        'herb Oh, and you should do this all while playing.  One of those scales that we do.  What do we call that?',
+        'Somebody yells out Bb scale',
+        'herb Yeah that one?',
+        'herb Got that, lets go!',
+        'hide character herb',
+        'The band waits for the countoff and executes the move.',
+        'It crashes and burns.',
         ''
     ]
 
