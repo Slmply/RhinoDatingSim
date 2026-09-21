@@ -115,6 +115,7 @@ monogatari.characters ({
         directory : "rex",
         sprites: {
             fent: 'fent.png',
+            sad: 'sad.jpg'
         }
     },
     'krug' : {
@@ -549,6 +550,7 @@ monogatari.script ({
         'please dont play my game again',
         'your a disgrace to the band and whatever section you are in',
         'dont come back',
+        'This game has reported you to the tuba section and you are henceforth blacklisted from tuba haus indefinitely',
         'show message BadPersonEnding',
         'end'
     ],
@@ -879,7 +881,81 @@ monogatari.script ({
         'hide character herb',
         'The band waits for the countoff and executes the move.',
         'It crashes and burns.',
-        ''
+        'You end up making the wrong turn and come face to face with rex.',
+        'show character rex sad',
+        'rex Im sad I really messed up oh no',
+        'rex I reaaaalalllyyyy neeed somebody to comfort me right now like if somebody were to cheer me up somehow I would be really happy yo.',
+        {
+            'Choice': {
+                'Dialog': 'rex like pleeeassse im so sad lol',
+                'Kiss on cheek': {
+                    'Text': 'Kiss on his Cheek',
+                    'Do': 'jump 011_rex_kiss'
+                },
+                'Hug': {
+                    'Text': 'Hug Him',
+                    'Do': 'jump 011_rex_hug'
+                },
+                'none': {
+                    'Text': 'Dont do it (That would be so evil tho)',
+                    'Do': 'jump 011_rex_evil'
+                }
+            }
+        },
+    ],
+
+    '011_rex_kiss': [
+        'You step forward into his face, tilt your head, and plant a fat, smooch directly onto his cheek.',
+        'SCHWIPPP. The sound echoes across the entire practice field and everyone turns to look.',
+        'rex :O',
+        'rex Holy... my depression... its gone.',
+        'His eyes glow with the sheer, unbridled wattage of a thousand Camp Randall stadium floodlights. (Thank you chatgpt for this joke)',
+        'rex Im so glad i met you... thank you so much',
+        'This guy is such a cutie hes like blushing and everything after that.',
+        'jump 011_rex_cont'
+    ],
+
+    '011_rex_hug': [
+        'You drop your tuba and run at rex and give him a big warm hug.',
+        'Your bodies fuse together like two peas in a pod.',
+        'rex *crying in your big strong shoulders*',
+        'You hear him whimpering and crying away all the beer from last night.',
+        'rex Wow... that felt like being wrapped in a weighted blanket made entirely of lead aprons and unconditional love.',
+        'rex My heart is full and my panties are soaked',
+        'He softly nuzzles the bell of your tuba, leaving a thin imprint of his lips on your practice horn permanantly.',
+        'jump 011_rex_cont'
+    ],
+
+    '011_rex_evil': [
+        'You look him dead in his puppy-dog eyes, scoff violently, and hit him with the most stone-cold, soulless face.',
+        'You do not comfort him. You do not even blink.',
+        'show character rex fent',
+        'Look what you did.  You killed him.',
+        'You truly are a terrible person',
+        'Never talk to the tubas again.  You are not welcome.',
+        'This game has reported you to the tuba section and you are henceforth blacklisted from tuba haus indefinitely',
+        'I hope you are proud of yourself',
+        'show message BadPersonEnding',
+        'end'
+    ],
+
+    '011_rex_cont': [
+        'hide character rex',
+        'TWEET TWEET TWEET!',
+        'A piercing whistle cuts through the autumn breeze, shaking every valve casing to its core.',
+        'show character herb smile',
+        'herb Alright, whoever just did that scale... it sounded like an agitated washing machine full of wet brass.',
+        'herb Do it again, but this time pretend you actually go to this university.',
+        'herb Also, did anyone see where my lucky quarter went? I set it down on the 40 and now its gone.',
+        'hide character herb',
+        'show character butts normal',
+        'butts looks over at you and wiggles his eyebrows suggestively.',
+        'butts Hey cutie, keep your horn angle up. We’ve got fifth quarter after this and you owe me a Hamms at haus.',
+        'You tighten your grip on the horn carriage, tasting victory, stale spaghetti, and high-octane aura.',
+        'The season is young, and the tubas are eternal.',
+        'show scene #000000 with fadeIn',
+        '--- END OF CHAPTER 1 ---',
+        'end'
     ]
 
 });
