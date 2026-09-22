@@ -954,9 +954,49 @@ monogatari.script ({
         'show character herb smile',
         'herb Alright good job everyone looked good i guess Idk (short for idk btw) I just work here.',
         'herb Anyways, onto you Corey',
-        'show scene #000000 with fadeIn',
-        '--- END OF CHAPTER 1 ---',
-        'end'
-    ]
+        'hide character herb',
+        'show character papa smile',
+        'papa Alright, happy friday everybody, lets get down to business.',
+        'papa We have alot of work to get to today.  There better be no funny business.',
+        'papa Number one.',
+        'Corey raises his hands and you prepare yourself to play.',
+        'His hands move fluidly, and it entrances you.',
+        'You play, eyes glued to the fluid yet precise movements, and your mind begins to stir.',
+        {
+            'Choice': {
+                'Daydream': {
+                    'Text': 'Daydream about Corey',
+                    'Do': 'jump 012_daydream'
+                },
+                'LockIn': {
+                    'Text': 'Lock in and play your music',
+                    'Do': 'jump 012_lock_in'
+                },
+            }
+        },
+    ],
+
+    '012_daydream' : [
+        'You allow your mind to drift off in the middle of the exercise.',
+        'MMMMMMMMhhhhhh, Paaapappapaaaaa',
+        'You imagine him all joyful eating a cone of ice cream...',
+        'You dont know why, but this image burns into your mind.',
+        'Its double chocolate pistachio ice cream',
+        'The green from the melting ice cream drips down the cone, and falls down onto the turf of the band field.',
+        'You imagine yourself running and diving to catch the falling drop of ice cream, and how good it would taste from the hands of papa',
+        'papa TUBAS!!!!!!',
+        'papa WATCH THE CUTOFF!',
+        'You snap back into reality and Corey is staring directly at you.',
+        'Not quite dissapointment, but more intrigue',
+        'papa ....',
+        'papa Dont let it happen again.',
+        'He turns away to the rest of the band',
+        'hide character papa',
+        'You continue warmups until eventually its time to run the show.'
+    ],
+
+    '012_lock_in' : [
+
+    ],
 
 });
