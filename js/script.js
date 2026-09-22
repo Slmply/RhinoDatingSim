@@ -124,6 +124,7 @@ monogatari.characters ({
         directory: 'krug',
         sprites: {
             close: 'close.png',
+            cook: 'KrugSpagety.png'
         }
     },
     'dz' : {
@@ -204,6 +205,15 @@ monogatari.characters ({
         directory: 'herb',
         sprites: {
             smile: 'herb.png',
+        }
+    },
+    'papa' : {
+        name: "Papa",
+        color: '#ebb734',
+        directory: 'papa',
+        sprites: {
+            smile: 'CPSmile.png',
+            cute: 'CPCute.png',
         }
     }
 });
@@ -312,7 +322,7 @@ monogatari.script ({
         'Your nostril fills with the scent of burnt spaghetti and moldy alfredo sauce',
         'dewalt Come on, lets get you up.',
         'show scene kitchen with fadeIn',
-        'show character krug close',
+        'show character krug cook',
         'krug Hey sweetie, hope you slept well!',
         'Cowboy Krug is standing over a skillet wearing an apron that just says CHEF SLUT on it',
         'He fips the spaghetti in the pan, and you catch a whif of the wonderful food hes currently cooking',
@@ -908,8 +918,8 @@ monogatari.script ({
         'You step forward into his face, tilt your head, and plant a fat, smooch directly onto his cheek.',
         'SCHWIPPP. The sound echoes across the entire practice field and everyone turns to look.',
         'rex :O',
-        'rex Holy... my depression... its gone.',
-        'His eyes glow with the sheer, unbridled wattage of a thousand Camp Randall stadium floodlights. (Thank you chatgpt for this joke)',
+        'rex Im like so wet right now.',
+        'His eyes glow with the sheer, unbridled wattage of a thousand Camp Randall stadium floodlights. (Thank you gemini for this line)',
         'rex Im so glad i met you... thank you so much',
         'This guy is such a cutie hes like blushing and everything after that.',
         'jump 011_rex_cont'
@@ -920,7 +930,7 @@ monogatari.script ({
         'Your bodies fuse together like two peas in a pod.',
         'rex *crying in your big strong shoulders*',
         'You hear him whimpering and crying away all the beer from last night.',
-        'rex Wow... that felt like being wrapped in a weighted blanket made entirely of lead aprons and unconditional love.',
+        'rex Wow... that felt like being wrapped in a weighted blanket made entirely of lead aprons and unconditional love. (Thank you gemini for this line)',
         'rex My heart is full and my panties are soaked',
         'He softly nuzzles the bell of your tuba, leaving a thin imprint of his lips on your practice horn permanantly.',
         'jump 011_rex_cont'
@@ -941,18 +951,9 @@ monogatari.script ({
 
     '011_rex_cont': [
         'hide character rex',
-        'TWEET TWEET TWEET!',
-        'A piercing whistle cuts through the autumn breeze, shaking every valve casing to its core.',
         'show character herb smile',
-        'herb Alright, whoever just did that scale... it sounded like an agitated washing machine full of wet brass.',
-        'herb Do it again, but this time pretend you actually go to this university.',
-        'herb Also, did anyone see where my lucky quarter went? I set it down on the 40 and now its gone.',
-        'hide character herb',
-        'show character butts normal',
-        'butts looks over at you and wiggles his eyebrows suggestively.',
-        'butts Hey cutie, keep your horn angle up. We’ve got fifth quarter after this and you owe me a Hamms at haus.',
-        'You tighten your grip on the horn carriage, tasting victory, stale spaghetti, and high-octane aura.',
-        'The season is young, and the tubas are eternal.',
+        'herb Alright good job everyone looked good i guess Idk (short for idk btw) I just work here.',
+        'herb Anyways, onto you Corey',
         'show scene #000000 with fadeIn',
         '--- END OF CHAPTER 1 ---',
         'end'
