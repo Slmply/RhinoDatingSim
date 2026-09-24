@@ -45,7 +45,12 @@ button:hover {
 
 /* Main Menu Styling */
 [data-screen="main"] {
-
+	background-image: url("../assets/images/HomeScreen.png");
+	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: cover;
+  	/* Recommended fallback color if the image fails to load */
+  	background-color: #333333;
 }
 
 /* Main Menu Buttons Styling */
