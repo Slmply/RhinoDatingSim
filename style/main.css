@@ -47,7 +47,7 @@ button:hover {
 [data-screen="main"] {
 	background-image: url("../assets/images/HomeScreen.png");
 	background-repeat: no-repeat;
-  	background-position: center;
+  	background-position: top;
   	background-size: cover;
   	/* Recommended fallback color if the image fails to load */
   	background-color: #333333;

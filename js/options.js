@@ -49,7 +49,7 @@ monogatari.settings({
 	'Preload': true,
 
 	// Time interval between autosaves (In Minutes). Default: 0 (Off)
-	'AutoSave': 0,
+	'AutoSave': 1,
 
 	// Enable service workers; Default: true *
 	'ServiceWorkers': true,
@@ -89,7 +89,7 @@ monogatari.settings({
 	// to portrait or landscape, a warning message will be displayed so the
 	// player rotates its device.
 	// Possible values: any, portrait or landscape.
-	'Orientation': 'landscape',
+	'Orientation': 'any',
 
 	// Allow players to skip through the game. Similar to the auto play feature,
 	// skipping will allow players to go through the game really fast.
