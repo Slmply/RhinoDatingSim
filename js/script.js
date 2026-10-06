@@ -24,6 +24,13 @@ monogatari.action ('message').messages ({
             <p>Congratulations, you are a bad person.  Day ToDay.</p>
         `
     },
+    'SkroobMaleEnding': {
+        title: 'You Are A Skroob Male™',
+        subtitle: 'You got the Skroob Male™ ending.',
+        body: `
+            <p>Congratulations, you are a Skroob Male™.  Skroob Yourself.</p>
+        `
+    },
 });
 
 // Define the notifications used in the game
@@ -72,7 +79,7 @@ monogatari.assets ('sounds', {
 
 // Define the videos used in the game.
 monogatari.assets ('videos', {
-
+    striebe: "TubaStriebe.mp4"
 });
 
 // Define the images used in the game.
@@ -209,11 +216,35 @@ monogatari.characters ({
     },
     'papa' : {
         name: "Papa",
-        color: '#ebb734',
+        color: '#f55142',
         directory: 'papa',
         sprites: {
             smile: 'CPSmile.png',
             cute: 'CPCute.png',
+        }
+    },
+    'skroob' : {
+        name: "Skroob Male™",
+        color: '#ebb734',
+        directory: 'skroob',
+        sprites: {
+            male: 'scroobmale.jpg',
+        }
+    },
+    'gd' : {
+        name: "GiggleDerp",
+        color: '#427bf5',
+        directory: 'gd',
+        sprites: {
+            screenager: 'screenager.jpg',
+        }
+    },
+    'pilar' : {
+        name: "Pilaris",
+        color: '#42f5ad',
+        directory: 'pilar',
+        sprites: {
+            mog: 'mog.png',
         }
     }
 });

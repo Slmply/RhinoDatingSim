@@ -422,7 +422,117 @@ monogatari.script ({
         'papa Alright everyone, lets begin with a full run of the halftime show.',
         'papa We will begin in five minutes',
         'hide character papa',
-        ''
+        'You walk back over to the sidelines where all your stuff is',
+        'show character skroob male',
+        'You find Skroob Male™ huddled over your backpack',
+        'skroob Yo I forgot my water can I have some',
+        {
+            'Choice': {
+                'Waterfall': {
+                    'Text': 'Yes but u gotta waterfall it',
+                    'Do': 'jump 013_waterfall'
+                },
+                'NoWaterfall': {
+                    'Text': 'Yes',
+                    'Do': 'jump 013_idrkiss'
+                },
+                'noWater': {
+                    'Text': 'No',
+                    'Do': 'jump 013_none'
+                },
+            }
+        },
+    ],
+
+    '013_waterfall' : [
+        'You hand over your  Skroob Male™ bottle with strict, but tell him to waterfall it.',
+        'skroob Dont worry, I gotchu.',
+        'He tips the bottle back and a glistening stream of  Skroob Male™ flows outwards.  Almost all of it misses his mouth',
+        'You can see his muscles through his now soaked  Skroob Male™.  They are so defined and sharp.',
+        'It makes you wonder if you will someday be a Skroob Male™',
+        'He hands the dripping  Skroob Male™ back to you. Your  Skroob Male™ briefly brush against his cold, wet  Skroob Male™.',
+        'A violent  Skroob Male™ of static  Skroob Male™ and raw homoerotic  Skroob Male™ shoots straight up your  Skroob Male™.',
+        'jump 013_cont'
+    ],
+
+    '013_idrkiss' : [
+        'You hand him the water bottle.',
+        'Mongo Skroob doesnt hesitate for a second.',
+        'He brings the bottle to his mouth and wraps his plump, Skroob Male™ lips firmly around the exact same plastic nozzle your mouth was on just minutes ago.',
+        '....',
+        'ayo #what dat mean',
+        'GLUG. GLUG. GLUG.',
+        'He chugs half of your remaining water in three gulps.',
+        'A faint, glistening sheen of Skroob Male™ saliva is left behind.',
+        'skroob Damn, why does your Skroob Male™ water bottle taste so sweet? What kind of Skroob Male™ filter do you use at your Skroob Male™ home?',
+        'Your entire Skroob Male™ face is currently radiating at approximately 450 degrees Fahrenheit. You are steaming like a microwaved Skroob Male™.',
+        'skroob Anyways, thanks twin. Our  Skroob Male™ is basically spiritually  Skroob Male™ for  Skroob Male™ now.',
+        'He hands the  Skroob Male™ back to you with a casual, devastating  Skroob Male™.',
+        'You clutch the damp  Skroob Male™ to your  Skroob Male™,  Skroob Male™ trembling at the sacred  Skroob Male™ you now possess.',
+        'jump 013_cont'
+    ],
+
+    '013_none' : [
+        'You clutch your water  Skroob Male™ tightly to your chest, glare at him with absolute contempt, and hiss: No.',
+        'Mongo  Skroob Male™ eyes widen in sheer, unadulterated  Skroob Male™.',
+        'skroob  Skroob Male™... what? We have been  Skroob Male™ box  Skroob Male™ for three hours in 85 degree  Skroob Male™...',
+        'skroob My  Skroob Male™ literally feels like  Skroob Male™ on  Skroob Male™...',
+        'skroob Just a  Skroob Male™, bro... please... my  Skroob Male™ are failing...',
+        'You do not  Skroob Male™. In fact, you  Skroob Male™ the cap and take a  Skroob Male™, luxurious  Skroob Male™ of ice-cold  Skroob Male™ right in front of his parched  Skroob Male™ while maintaining unblinking  Skroob Male™ contact.',
+        'You let out a loud, refreshing  Skroob Male™ for good  Skroob Male™.',
+        'Mongo  Skroob Male™ drops down to his  Skroob Male™ on the  Skroob Male™ rubber  Skroob Male™, clutching his  Skroob Male™.',
+        'skroob Tell...  Skroob Male™... I hit... my... cutoff...',
+        'He dramatically  Skroob Male™ face-first into the synthetic  Skroob Male™, instantly  Skroob Male™ up into a  Skroob Male™, crusty  Skroob Male™ like  Skroob Male™ visiting  Skroob Male™  Skroob Male™ without a water  Skroob Male™.',
+        'Look what you have done. You killed  Skroob Male™.',
+        'You literally let a fellow  Skroob Male™  Skroob Male™ die of  Skroob Male™ on the 35-yard line because you were stingy with tap  Skroob Male™.',
+        'What kind of  Skroob Male™  Skroob Male™ plays a  Skroob Male™ sim just to  Skroob Male™ their  Skroob Male™ to  Skroob Male™?',
+        'The entire  Skroob Male™ section turns to look at you with unbridled  Skroob Male™.',
+        'You are stripped of your  Skroob Male™, blacklisted from  Skroob Male™ Haus, and banned from Camp  Skroob Male™ forever.',
+        'I hope you are proud of  Skroobself™.',
+        'show message SkroobMaleEnding',
+        'end'
+    ],
+
+    '013_cont' : [
+        'skroob Alright, thanks my Skroob Male™. Lets go lock in so we can mog this halftime run.',
+        'He gives your shoulder a firm, brotherly squeeze before jogging back out onto the field.',
+        'hide character skroob',
+        'You tuck your water bottle back into your bag, still slightly dizzy from the encounter.',
+        'show character gd screenager',
+        'You spot GiggleDerp on the sidelines.',
+        'Unfortunately, she is too absorbed in whatever is going on with her phone that she doesnt even know you are there',
+        'Kids these days smh',
+        'hide character gd',
+        'TWEEEEEEEEEEEEEEEEEEEET!',
+        'A piercing whistle blows from the sideline.',
+        'show character papa smile',
+        'papa FIVE MINUTES IS UP! EVERYONE TO THE STARTING SET!',
+        'papa Lets make this full run clean. LESS GOO!',
+        'hide character papa',
+        'You rush back out to your spot on the turf, heart pumping with adrenaline.',
+        'You hoist twenty-five pounds of cold brass onto your shoulder, lock in, and await the countoff.',
+        'Next to you, you hear a man take a huge breath of air',
+        'show character pilar mog',
+        'pilar HHOOOOORRRAYYYYYYYYY!!!!',
+        'pilar ITTTSSSS, GOONNANA BEE A RUNNNNTHROUGHHHH',
+        'He yells so loud you can feel goosebumps form around your neck',
+        'He turns his eyes to you and mogs',
+        'That jawline.... so perfect',
+        'Canthal Tilt.... pristine',
+        'The bonemashing that his face must have taken seems unbrearable',
+        'So unfortunate that you are a chud basking in the glory of this looksmaxing specimen',
+        'pilar hey cutie, only with the power of love can you mog like this',
+        'He winks at you.',
+        'You blush.',
+        'hide character pilar',
+        'Before you can make a comment, ponty begins the whistle.',
+        'Time stops as you prepare to run the show.',
+        'The third whistle hits, and you drive your knee up on the fourth...',
+        'show video striebe immersive with close',
+        'OH NO....',
+        'That was bad.  Nothing went your way.',
+        'You made so many mistakes, missed all the kicks, and your recoverys were awful.',
+        'You throw your tuba to the ground and run away and hide in the shed.'
     ]
 
 });
