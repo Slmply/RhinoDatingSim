@@ -410,12 +410,19 @@ monogatari.script ({
         'papa ....',
         'papa Dont let it happen again.',
         'He turns away to the rest of the band',
-        'hide character papa',
-        'You continue warmups until eventually its time to run the show.'
+        'jump 012_cont'
     ],
 
     '012_lock_in' : [
-
+        'You push all your focus in on your playing and resist the urge to daydream about Corey.',
+        'jump 012_cont'
     ],
+
+    '012_cont' : [
+        'papa Alright everyone, lets begin with a full run of the halftime show.',
+        'papa We will begin in five minutes',
+        'hide character papa',
+        ''
+    ]
 
 });
