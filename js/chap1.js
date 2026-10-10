@@ -1,5 +1,5 @@
 
-/* 
+/*
 * Chapter 1 of the story
 */
 monogatari.script ({
@@ -90,6 +90,16 @@ monogatari.script ({
     ],
 
     '001_cute' : [
+        {
+            'Function': {
+                'Apply': () => {
+                    monogatari.storage().love += 1;
+                },
+                'Reverse': () => {
+                    monogatari.storage().love -= 1;
+                }
+            }
+        },
         'dewalt Aww thank u silly :3',
         "dewalt It's been so long since somebody told me that",
         'dewalt Mostly people just tell me to put a shirt on in the kitchen',
@@ -132,6 +142,16 @@ monogatari.script ({
     ],
 
     '002_wrap': [
+        {
+            'Function': {
+                'Apply': () => {
+                    monogatari.storage().love += 1;
+                },
+                'Reverse': () => {
+                    monogatari.storage().love -= 1;
+                }
+            }
+        },
         'You walk up and wrap your arms around his waist, gripping tightly',
         'He pauses, shocked by your sudden advance, but eventually relaxes and leans into your hug',
         'You can feel his manly kitchen heat radiating into your skull',
@@ -197,6 +217,16 @@ monogatari.script ({
     ],
 
     '003_feet': [
+        {
+            'Function': {
+                'Apply': () => {
+                    monogatari.storage().love += 1;
+                },
+                'Reverse': () => {
+                    monogatari.storage().love -= 1;
+                }
+            }
+        },
         'You stare at his feet as they wiggle on the table.  The morning light shines and reflects off his big toe, making it seem larger than life.',
         'You begin to drool...',
         'butts Are you okay?  You are drooling!',
@@ -205,6 +235,16 @@ monogatari.script ({
     ],
 
     '003_turf': [
+        {
+            'Function': {
+                'Apply': () => {
+                    monogatari.storage().love += 1;
+                },
+                'Reverse': () => {
+                    monogatari.storage().love -= 1;
+                }
+            }
+        },
         'Without saying a single word you lean forward, delicately pluck a singular black rubber crumb off his arch, and pop it into your mouth like a caviar',
         'It tastes like heaven',
         'butts ...Did you just eat my feet turf???',
@@ -316,8 +356,17 @@ monogatari.script ({
     ],
 
     "006_help" : [
+        {
+            'Function': {
+                'Apply': () => {
+                    monogatari.storage().love += 1;
+                },
+                'Reverse': () => {
+                    monogatari.storage().love -= 1;
+                }
+            }
+        },
         'You get on your knees as well and begin to help pick up',
-        // 'show character duke close',
         'You grab his show music when you suddenly lock eyes',
         'Your noses are less than a centimeter away from eachother, and you can feel eachothers breath.',
         'duke Thhh...Thhan...Thank You!',

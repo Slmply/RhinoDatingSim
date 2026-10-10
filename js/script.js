@@ -31,6 +31,27 @@ monogatari.action ('message').messages ({
             <p>Congratulations, you are a Skroob Male™.  Skroob Yourself.</p>
         `
     },
+    'FriendshipEnding': {
+        title: 'Friendship',
+        subtitle: 'You got the friendship ending.',
+        body: `
+            <p>You thought you could just be friends.  Little do you know, the tubas dont do "friendships."</p>
+        `
+    },
+    'LoveEnding': {
+        title: 'Love',
+        subtitle: 'You got the Love ending.',
+        body: `
+            <p>You have fallen in love with the section of your dreams.  Maybe, if things were a little different you could have found true love.</p>
+        `
+    },
+    'TrueEnding': {
+        title: 'True Love',
+        subtitle: 'You got the True Love ending.',
+        body: `
+            <p>And so our story comes to a close.  You have found your one and only true love: The Wisconsin Rhinos.</p>
+        `
+    },
 });
 
 // Define the notifications used in the game
@@ -89,7 +110,9 @@ monogatari.assets ('images', {
     'tubas': 'TubaSection.png',
     'football': 'Football.webp',
     'ham': "hm.jpg",
-    'keg': "keg.jpg"
+    'keg': "keg.jpg",
+    "blush": "TubaSectionBlush.png",
+    "kiss": "TubaSectionKiss.png",
 });
 
 // Define the backgrounds for each scene.
@@ -117,7 +140,9 @@ monogatari.characters ({
         directory: 'butts',
         sprites: {
             feet: 'feet.png',
-            normal: 'normal.png'
+            normal: 'normal.png',
+            angry: 'angery.png',
+            cute: "buttsCute.png"
         }
     },
     'rex' : {
@@ -254,5 +279,10 @@ monogatari.characters ({
         sprites: {
             angel: 'angel.png',
         }
+    },
+    'rhinos' : {
+        name: "Rhinos",
+        color: '#C41E3A',
+        directory: 'rhino',
     }
 });

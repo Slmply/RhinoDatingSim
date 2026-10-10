@@ -24,6 +24,16 @@ monogatari.script ({
     ],
 
     "014_good_times" : [
+        {
+            'Function': {
+                'Apply': () => {
+                    monogatari.storage().love += 1;
+                },
+                'Reverse': () => {
+                    monogatari.storage().love -= 1;
+                }
+            }
+        },
         'You think back to all the good times you had with the rhinos...',
         'show character dewalt normal left',
         'The sweet wake-up with a gorgeus old man...',
@@ -51,6 +61,16 @@ monogatari.script ({
     ],
 
     "014_favorite_things" : [
+        {
+            'Function': {
+                'Apply': () => {
+                    monogatari.storage().love += 1;
+                },
+                'Reverse': () => {
+                    monogatari.storage().love -= 1;
+                }
+            }
+        },
         "You let your mind wander to your favorite things...",
         "show image ham left",
         "An ice cold ham...",
@@ -80,6 +100,16 @@ monogatari.script ({
     ],
 
     "014_papa" : [
+        {
+            'Function': {
+                'Apply': () => {
+                    monogatari.storage().love += 1;
+                },
+                'Reverse': () => {
+                    monogatari.storage().love -= 1;
+                }
+            }
+        },
         "show character papa smile",
         "What would papa do?  Im sure he saw that run through.  It was terrible.",
         "Everything in Dr. Corey Pompey's life has led to this moment...",
@@ -147,13 +177,133 @@ monogatari.script ({
         "show image tubas",
         "The tubas find you and all run over",
         "butts Where have you been?  Weve been so worried about you!",
-        "skroob Never leave like that again.  Youll give me a heart attack.",
+        "skroob Never leave like that again.  Youll give me a Skroob Male™ attack.",
         "rex I was so worried.",
         "krug I thought I had killed you with my spaghetti this morning.  Luckly that wasnt the case.",
         "dz Dont run away from me like that",
         "duke I never forgot about this morning.  I coulndt stop thinking about it while we looked for you.",
         "kys I made this game im exempt from having to say this stuff",
         "izz Im so glad we found you, we cant lose our best rhinoball player!",
-        ""
-    ]
+        "bc And ive always said that.",
+        "td Hmmmmphhh, Welcome back, its not like i liked you or anything.",
+        "nick Have you heard of that one linebacker noah ....",
+        "bp I was looking all over for you.  Do you want to go off to mem u to get a tub of ice cream.",
+        "brewski Im a stupid dummy idiot.",
+        "gd I would say something but im so busy with whatever is going on with my phone that I didnt notice you were gone.",
+        "pilar guhhhhhhhhhhhh",
+        "show character butts normal",
+        "butts I know that run through wasnt perfect, but Its okay.",
+        "butts Its okay, we will have the show ready for tomorrow.",
+        "butts Its been hard on everyone, but these past few days have been the best for all of us.",
+        "butts Having you around, has made the section better.",
+        "butts I speak for the whole tuba section when I say this",
+        "butts You are amazing.  From the bottom of our hearts, thank you.",
+        {
+            'Choice': {
+                'ily': {
+                    'Text': 'I love you',
+                    'Do': 'jump 016_love'
+                },
+                'friends': {
+                    'Text': 'You are my best friends',
+                    'Do': 'jump 016_friends'
+                },
+            }
+        },
+    ],
+
+    "016_love" : [
+        "hide image tubas",
+        "show image blush",
+        "hide character butts",
+        "butts Whaaa... You really mean that//",
+        "butts ...",
+        "butts I....I want to kiss you right now...",
+        "skroob ...I also want to kiss you",
+        "td ...its not like I want to , uughhhh, but I guess ill join...",
+        "rhino WE, yes WE, want to kiss you.",
+        "hide image blush",
+        "show image kiss",
+        "You and the tubas embrace in a tight hug",
+        "You pucker your lips and lean in for a wet smooch",
+        "Yor lips touch slowly and the taste of hamms overwhelms your senses",
+        "You continue to kiss, and the overwhelming force of 24 tongues making out with you sends you into shock.",
+        "Everyting starts to fade.....",
+        "show scene #000000 with fadeIn",
+        "As your mind rests, you reflect on everything that has happened today.",
+        "Did you say everything you wanted to say? Do everything you wanted to do?",
+        "Have you shown your true love to the tuba section?",
+        {
+            'Conditional': {
+                'Condition': () => {
+                    return monogatari.storage().love >= 8;
+                },
+                'True': 'jump true_finale',
+                'False': 'jump finale',
+            }
+        }
+    ],
+
+    "016_friends" : [
+        "butts Grrrr",
+        "butts I thought we were something.",
+        "hide image tubas",
+        "show character butts angry",
+        "butts Day today yourself",
+        "butts You know, I hope your pillow is piss warm",
+        "rhino WE, yes WE, all hate you now.",
+        "He grabs a paddle and lifts it above his head.",
+        "butts TUBAAAASSS, CHARGEEE!!!!!",
+        "The full force of the tuba section sprints in your direction.",
+        "You have no time to think.  No time to run.",
+        "They reach you and tear you apart.",
+        "show scene #FF0000 with fadeIn",
+        "Limb from limb, you are shredded to bits.",
+        "Your body was never found.",
+        "show message FriendshipEnding",
+        "end"
+    ],
+
+    "finale": [
+        "show scene field with fadeIn",
+        "show character butts cute",
+        "butts Morning sleepyhead.",
+        "butts I saw you got quite flustered during our kiss earlier.",
+        "butts Im glad.",
+        "butts Thank you, again for everything.",
+        "butts You have the rhinos the happiest and horniest section of the band.",
+        "butts I look forward to a bright future together.",
+        "butts But maybe, if something had gone differently, we could have had a little more.",
+        "butts Super secret ending????",
+        "butts Anyways, lets get you back up.  Weve got to get ready for game day tomorrow.",
+        "You take his hand and stand up.",
+        "hide character butts",
+        "show image tubas",
+        "Off in the distance, you see the Wisconsin rhinos waiting for you, each with a smile on their faces.",
+        "You smile, and know you have found your love.",
+        "show message LoveEnding",
+        "end"
+    ],
+
+    "true_finale" : [
+        "show scene field with fadeIn",
+        "show character papa cute",
+        "papa Good morning sleepyhead",
+        "papa Ive been watching you.  The things you have done for these tubas... is just incredible.",
+        "papa Well, Ive got a proposition for you.  Take my hand.",
+        "You take his hand and get up on your feet.",
+        "papa Look over there, at those tubas.",
+        "hide character papa",
+        "show image tubas",
+        "The tubas are off on the sidelines waiting for you.  They seem eager.",
+        "papa The pride of wisconsin.  Without them, I dont know what kind of band we would be.",
+        "papa With the sections love, you have become the most important person in the world.",
+        "hide image tubas",
+        "show character papa cute",
+        "He extends his hand to you one last time.",
+        "papa Come with me, and together We can love the Wisconsin Rhinos.",
+        "You hold papas hand and together, arm in arm, walk to the sidelines to the loves of your life.",
+        "show message TrueEnding",
+        "end"
+    ],
  });

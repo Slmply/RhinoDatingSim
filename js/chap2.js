@@ -81,7 +81,7 @@ monogatari.script ({
         'hide character bc',
         'You hit the 30-yard line at full throttle, lungs bellowing like a clogged diesel engine.',
         'show character td pose',
-        'Out of nowhere, TailsDerp lunges toward you, eyes locked onto your hip flags with predatory hunger!',
+        'Out of nowhere, TailsDerp lunges toward you, eyes locked onto your predatory hunger!',
         {
             'Choice': {
                 'Dialog': 'TailsDerp is about to snatch your flags! React now!',
@@ -262,6 +262,16 @@ monogatari.script ({
     ],
 
     "010_wink" : [
+        {
+            'Function': {
+                'Apply': () => {
+                    monogatari.storage().love += 1;
+                },
+                'Reverse': () => {
+                    monogatari.storage().love -= 1;
+                }
+            }
+        },
         'You wink back to Derpelganger.',
         'He begins to smirk and his cheeks turn slightly red.',
         'You both stop and breathe slowly, looking at eachother.',
@@ -334,11 +344,20 @@ monogatari.script ({
     ],
 
     '011_rex_kiss': [
+        {
+            'Function': {
+                'Apply': () => {
+                    monogatari.storage().love += 1;
+                },
+                'Reverse': () => {
+                    monogatari.storage().love -= 1;
+                }
+            }
+        },
         'You step forward into his face, tilt your head, and plant a fat, smooch directly onto his cheek.',
         'SCHWIPPP. The sound echoes across the entire practice field and everyone turns to look.',
         'rex :O',
-        'rex Im like so wet right now.',
-        'His eyes glow with the sheer, unbridled wattage of a thousand Camp Randall stadium floodlights. (Thank you gemini for this line)',
+        'His eyes glow like floodlights.',
         'rex Im so glad i met you... thank you so much',
         'This guy is such a cutie hes like blushing and everything after that.',
         'jump 011_rex_cont'
@@ -349,7 +368,7 @@ monogatari.script ({
         'Your bodies fuse together like two peas in a pod.',
         'rex *crying in your big strong shoulders*',
         'You hear him whimpering and crying away all the beer from last night.',
-        'rex Wow... that felt like being wrapped in a weighted blanket made entirely of lead aprons and unconditional love. (Thank you gemini for this line)',
+        'rex Wow... that felt like being wrapped in a weighted blanket made entirely of love.',
         'rex My heart is full and my panties are soaked',
         'He softly nuzzles the bell of your tuba, leaving a thin imprint of his lips on your practice horn permanantly.',
         'jump 011_rex_cont'
@@ -396,6 +415,16 @@ monogatari.script ({
     ],
 
     '012_daydream' : [
+        {
+            'Function': {
+                'Apply': () => {
+                    monogatari.storage().love += 1;
+                },
+                'Reverse': () => {
+                    monogatari.storage().love -= 1;
+                }
+            }
+        },
         'You allow your mind to drift off in the middle of the exercise.',
         'MMMMMMMMhhhhhh, Paaapappapaaaaa',
         'You imagine him all joyful eating a cone of ice cream...',
