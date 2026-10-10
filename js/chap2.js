@@ -532,7 +532,7 @@ monogatari.script ({
         'OH NO....',
         'That was bad.  Nothing went your way.',
         'You made so many mistakes, missed all the kicks, and your recoverys were awful.',
-        'You throw your tuba to the ground and run away and hide in the shed.'
+        'You throw your tuba to the ground and run away to picnic point.',
+        'jump 014_start'
     ]
-
 });

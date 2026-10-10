@@ -87,14 +87,18 @@ monogatari.assets ('images', {
     'spaghetti' : 'Spaghet.jpg',
     'clock': 'RhinoClock.jpg',
     'tubas': 'TubaSection.png',
-    'football': 'Football.webp'
+    'football': 'Football.webp',
+    'ham': "hm.jpg",
+    'keg': "keg.jpg"
 });
 
 // Define the backgrounds for each scene.
 monogatari.assets ('scenes', {
     'field': 'BandField.jpg',
     'kitchen': 'Kitchen.jpg',
-    'living': 'LivingRoom.jpg'
+    'living': 'LivingRoom.jpg',
+    'picnic': 'picnicPoint.jpg',
+    'heaven': "heaven.jpg"
 });
 
 // Define the Characters
@@ -152,11 +156,6 @@ monogatari.characters ({
         name: 'Kysclade',
         color: '#1703fc',
         directory: 'kys'
-    },
-    'papa' : {
-        name: "Papa",
-        color: '#4934eb',
-        directory: 'papa'
     },
     'izz' : {
         name: "Izz",
@@ -245,6 +244,15 @@ monogatari.characters ({
         directory: 'pilar',
         sprites: {
             mog: 'mog.png',
+            feet: 'PilarFeet.png'
+        }
+    },
+    'bebop' : {
+        name: "Bebop",
+        color: '#a83285',
+        directory: 'bebop',
+        sprites: {
+            angel: 'angel.png',
         }
     }
 });
